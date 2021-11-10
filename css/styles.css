@@ -1,0 +1,186 @@
+/* Цвет основного текста #212121 черный */
+/* Цвет вторичного текста #757575 серый */
+/* #FFFFFF белый*/
+/* акцент #2196F3 голубой*/
+/*rgba(255, 255, 255, 0.6); адрес в футере */
+
+/* Цвет фона в шапке #FFFFFF */
+/* Вторичный цвет фона #E5E5E5  */
+/* Цвет фона в команде #F5F4FA */
+/* Цвет фона мейна и футера #2F303A */
+
+:root {
+  --primary-text-color: #212121;
+  --title-text-color: #757575;
+  --accent-color: #2196f3;
+  --text-footer-color: rgba(255, 255, 255, 0.6);
+  --text-white: #ffffff;
+
+  --primary-bkg-color: #e5e5e5;
+  --footer-bkg-color: #2f303a;
+  --secondery-bkg-color: #f5f4fa;
+  --font-bkg-color: #2f303a;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  background-color: #ffffff;
+  color: var(--primary-text-color);
+  letter-spacing: 0.03em;
+}
+
+.logo,
+.studio {
+  font-family: Raleway, sans-serif;
+  color: var(--accent-color);
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+}
+.logo:hover {
+  color: var(--accent-color);
+}
+.studio {
+  color: var(--primary-text-color);
+}
+
+.list {
+  list-style: none;
+}
+
+/* Site-nav */
+
+.site-nav .link {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.cont-nav a {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.site-nav a:hover,
+.cont-nav a:hover,
+.site-nav a:focus,
+.cont-nav a:focus {
+  color: var(--accent-color);
+}
+
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
+/* Hero */
+
+.hero-title {
+  color: var(--text-white);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  background: var(--font-bkg-color);
+}
+
+.hero-button {
+  color: var(--text-white);
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  background: var(--accent-color);
+}
+
+/*Soft skils*/
+
+.skils-examples h3 {
+  color: var(--primary-text-color);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.skils-examples p {
+  color: var(--title-text-color);
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+/* Чем мы занимаемся */
+.works-title,
+.command-title {
+  color: var(--primary-text-color);
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+
+/* Команда */
+.command-img h3 {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.9;
+  text-align: center;
+}
+.command-img p {
+  color: var(--title-text-color);
+  font-size: 16px;
+  line-height: 1.9;
+  text-align: center;
+}
+
+/* Наши работы */
+
+.portfolio:hover,
+.portfolio:focus {
+  color: var(--text-white);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+
+  background: var(--accent-color);
+}
+
+/* Подвал */
+
+.footer {
+  font-family: inherit;
+  font-style: normal;
+  color: var(--text-white);
+  font-size: 14px;
+  line-height: 1.71;
+
+  background-color: var(--footer-bkg-color);
+}
+.footer-link a {
+  font-family: inherit;
+  color: var(--text-footer-color);
+  font-size: 14px;
+  line-height: 1.71;
+
+  background-color: var(--footer-bkg-color);
+}
+.footer-link a:hover,
+.footer-link a:focus {
+  color: var(--accent-color);
+}

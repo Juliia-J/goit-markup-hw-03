@@ -9,7 +9,7 @@
   --footer-bkg-color: #2f303a;
   --secondery-bkg-color: #f5f4fa;
   --font-bkg-color: #2f303a;
-  --font-bkg-footer-color: #ffffff;
+  --font-bkg-white-color: #ffffff;
 }
 
 ul {
@@ -89,6 +89,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: var(--font-bkg-header-color);
 }
 
 .logo-nav {
@@ -175,11 +176,13 @@ body {
   border-radius: 4px;
   padding: 10px 32px;
   min-width: 200px;
+
   color: var(--text-white);
   font-family: inherit;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
+
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
@@ -189,6 +192,17 @@ body {
 }
 
 /* /-------------*Soft skils*--------------/  */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
 
 .skils {
   padding-top: 94px;
@@ -229,7 +243,7 @@ body {
 /* /----------------* Чем мы занимаемся *------------/  */
 
 .works {
-  padding-bottom: 90px;
+  padding-bottom: 188px;
 }
 
 .works-img {
@@ -280,6 +294,18 @@ body {
 
 /* Наши работы */
 
+.filtre-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 56px;
+}
+
+.filtre-button .filtre-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .portfolio:hover,
 .portfolio:focus {
   color: var(--text-white);
@@ -289,7 +315,14 @@ body {
   line-height: 1.62;
   text-align: center;
 
-  background: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  background-color: var(--accent-color);
+}
+
+.example {
+  padding-bottom: 0;
 }
 
 .flex-container {
@@ -299,9 +332,10 @@ body {
 
 .flex-element {
   width: 370px;
-  background-color: lightcoral;
+  background-color: var(--font-bkg-header-color);
   margin-right: 30px;
   margin-bottom: 30px;
+  border: 1px solid #eeeeee;
 }
 
 .flex-element:nth-child(3n) {
@@ -312,27 +346,62 @@ body {
   margin-bottom: 0;
 }
 
+.flex-element h2 {
+  margin-top: 20px;
+  margin-bottom: 4px;
+}
+
+.flex-element p {
+  margin-bottom: 20px;
+}
+
 /* Подвал */
+
+.footer-section {
+  background-color: var(--footer-bkg-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 215px;
+}
+
+.logo-footer,
+.studio-footer {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+
+  color: var(--text-white);
+}
+
+.logo-footer {
+  color: var(--accent-color);
+}
+
 .footer {
+  margin-top: 20px;
+  margin-bottom: 9px;
   font-family: inherit;
   font-style: normal;
   color: var(--text-white);
   font-size: 14px;
   line-height: 1.71;
-
-  background-color: var(--footer-bkg-color);
 }
 .footer-link a {
   font-family: inherit;
   color: var(--text-footer-color);
   font-size: 14px;
   line-height: 1.71;
-
-  background-color: var(--footer-bkg-color);
 }
 .footer-link a:hover,
 .footer-link a:focus {
   color: var(--accent-color);
+}
+
+.mail {
+  margin-bottom: 9px;
 }
 
 .box {

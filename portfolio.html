@@ -41,15 +41,16 @@
 
        <!--Наши работы-->
     <section class="filtre">
-        <h1>Кнопки</h1>
-        <ul class="list">
-            <li><button class="portfolio" type="button">Все</button></li>
-            <li><button class="portfolio" type="button">Веб-сайты</button></li>
-            <li><button class="portfolio" type="button">Приложения</button></li>
-            <li><button class="portfolio" type="button">Дизайн</button></li>
-            <li><button class="portfolio" type="button">Маркетинг</button></li>
+        <div class="container">
+        <h1 class="visually-hidden">Кнопки</h1>
+        <ul class="filtre-button list">
+            <li class="filtre-item"><button class="portfolio" type="button">Все</button></li>
+            <li class="filtre-item"><button class="portfolio" type="button">Веб-сайты</button></li>
+            <li class="filtre-item"><button class="portfolio" type="button">Приложения</button></li>
+            <li class="filtre-item"><button class="portfolio" type="button">Дизайн</button></li>
+            <li class="filtre-item"><button class="portfolio" type="button">Маркетинг</button></li>
         </ul> 
-   
+</div>
         <div class="container example">
         <ul class="flex-container list">
             <li class="flex-element"> 
@@ -103,18 +104,21 @@
 </main>
 
 <!--Подвал-->
+
 <footer>
 
-    <a href="./index.html" class="logo">Web<span class="studio">Studio</span></a>
+    <div class="container footer-section">
+        <a href="./index.html" class="logo-footer link-all">Web<span class="studio-footer link-all">Studio</span></a>
 
-    <address class="footer">
-        г. Киев, пр-т Леси Украинки, 26
-    </address>
+        <address class="footer">
+            г. Киев, пр-т Леси Украинки, 26
+        </address>
 
-    <ul class="footer-link list">
-        <li><a href="mailto:info@info@example.com">info@devstudio.com</a></li>
-        <li><a href="tel:+380991111111">+38 099 111 11 11</a></li>
-    </ul>
+        <ul class="footer-link list">
+            <li class="mail"><a href="mailto:info@info@example.com" class="link-all">info@devstudio.com</a></li>
+            <li class="tel"><a href="tel:+380991111111" class="link-all">+38 099 111 11 11</a></li>
+        </ul>
+    </div>
 
 </footer>
     

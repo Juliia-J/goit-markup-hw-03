@@ -26,7 +26,6 @@ img {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid crimson;
 }
 
 button {
@@ -53,9 +52,10 @@ body {
   width: 200;
   display: inline-block;
 }
+/* Шапка сайта */
 
 .page-header {
-  background-color: #cccccc;
+  background-color: var(--font-bkg-white-color);
 }
 
 .logo,
@@ -146,23 +146,23 @@ body {
   color: var(--accent-color);
 }
 
-/* Hero */
+/* ----------Hero------------------ */
 
 .hero {
   text-align: center;
-}
+  padding-top: 200px;
+  padding-bottom: 200px;
 
-.hero-container {
   background-color: var(--font-bkg-color);
-  /* padding: 200px, 452px, 280px; */
 }
 
 .hero-title {
   width: 696px;
   text-align: center;
-  padding: 200px, 452px, 280px;
 
   color: var(--text-white);
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 0;
   margin-bottom: 30px;
   font-weight: 900;
@@ -402,8 +402,4 @@ body {
 
 .mail {
   margin-bottom: 9px;
-}
-
-.box {
-  outline: 2px solid tomato;
 }

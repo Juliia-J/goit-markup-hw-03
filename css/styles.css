@@ -21,6 +21,24 @@
   --secondery-bkg-color: #f5f4fa;
   --font-bkg-color: #2f303a;
 }
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+}
 
 body {
   font-family: Roboto, sans-serif;
@@ -40,8 +58,10 @@ body {
 
 .list {
   list-style: none;
-  padding: 0;
-  margin: 0;
+}
+
+.link-all {
+  text-decoration: none;
 }
 
 .btn {

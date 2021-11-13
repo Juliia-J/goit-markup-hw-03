@@ -66,6 +66,7 @@ body {
 
 .page-header {
   background-color: var(--font-bkg-white-color);
+  border: 1px solid #ececec;
 }
 
 .logo,
@@ -330,17 +331,22 @@ body {
 }
 
 .filtre-button .filtre-item:not(:last-child) {
-  margin-right: 30px;
+  margin-right: 8px;
 }
 
-.portfolio:hover,
-.portfolio:focus {
-  color: var(--text-white);
+.portfolio {
+  border: none;
+  padding: 6px 22px;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
+}
+
+.portfolio:hover,
+.portfolio:focus {
+  color: var(--text-white);
 
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -376,13 +382,25 @@ body {
 .flex-element h2 {
   margin-top: 20px;
   margin-bottom: 4px;
+  margin-left: 24px;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+
+  color: var(--primary-text-color);
 }
 
 .flex-element p {
   margin-bottom: 20px;
+  margin-left: 24px;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+
+  color: var(--title-text-color);
 }
 
-/* Подвал */
+/*--------------------- Подвал------------------------ */
 
 .footer {
   background-color: var(--footer-bkg-color);

@@ -281,7 +281,7 @@ body {
 }
 
 /* Команда */
-.command {
+.commands {
   background-color: var(--secondery-bkg-color);
   padding-top: 94px;
   padding-bottom: 94px;

@@ -328,13 +328,13 @@ body {
 .filtre {
   padding-top: 94px;
   padding-bottom: 94px;
+  background-color: var(--font-bkg-white-color);
 }
 
 .filtre-button {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* padding-top: 94px; */
   padding-bottom: 56px;
 }
 
